@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "teams",
   "info": {
-    "name": "team",
-    "description": ""
+    "name": "team"
   },
   "options": {
     "increments": true,
@@ -12,6 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "short_name": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
     "calendar": {
       "type": "string"
     },
@@ -28,16 +33,9 @@
       "pluginOptions": {}
     },
     "players": {
-      "via": "teams",
       "collection": "player",
+      "via": "teams",
       "dominant": true
-    },
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "short_name": {
-      "type": "string"
     }
   }
 }

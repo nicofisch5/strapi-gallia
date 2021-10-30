@@ -38,12 +38,12 @@
       "required": false,
       "pluginOptions": {}
     },
+    "position": {
+      "type": "string"
+    },
     "teams": {
       "via": "players",
       "collection": "team"
-    },
-    "position": {
-      "type": "string"
     }
   }
 }
