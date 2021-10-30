@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "players",
+  "collectionName": "teams",
   "info": {
-    "name": "player"
+    "name": "team"
   },
   "options": {
     "increments": true,
@@ -11,22 +11,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "firstname": {
-      "type": "string",
-      "required": true
-    },
-    "lastname": {
-      "type": "string",
-      "required": true
-    },
-    "number": {
-      "type": "integer"
-    },
-    "position": {
-      "type": "integer"
-    },
-    "size": {
-      "type": "integer"
+    "calendar": {
+      "type": "string"
     },
     "image": {
       "model": "file",
@@ -40,9 +26,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "teams": {
-      "via": "players",
-      "collection": "team"
+    "players": {
+      "collection": "player",
+      "via": "teams",
+      "dominant": true
     }
   }
 }
