@@ -28,8 +28,8 @@
       "pluginOptions": {}
     },
     "players": {
-      "collection": "player",
       "via": "teams",
+      "collection": "player",
       "dominant": true
     },
     "name": {

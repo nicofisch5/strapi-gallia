@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "players",
   "info": {
-    "name": "player"
+    "name": "player",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,9 +21,6 @@
       "required": true
     },
     "number": {
-      "type": "integer"
-    },
-    "position": {
       "type": "integer"
     },
     "size": {
@@ -43,6 +41,9 @@
     "teams": {
       "via": "players",
       "collection": "team"
+    },
+    "position": {
+      "type": "string"
     }
   }
 }
